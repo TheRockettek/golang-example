@@ -1,10 +1,10 @@
 package main
 
 import (
-	"sync"
-	"time"
 	"fmt"
 	"log"
+	"sync"
+	"time"
 )
 
 const (
