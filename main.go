@@ -1,11 +1,12 @@
 package main
 
 import (
+	"github.com/bradhe/golang-examples/accumulator"
 	"github.com/go-martini/martini"
 )
 
 func main() {
-	acc := NewAccumulator()
+	acc := accumulator.NewAccumulator()
 
 	m := martini.Classic()
 	m.Get("/v1/increment", acc.Increment)
